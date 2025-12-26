@@ -19,8 +19,8 @@ echo Done packing.
 echo Step 4: Replace old version
 echo Replacing old version.
 cd build
-del %ProjName%.pk3
-ren %ProjName%n.pk3 %ProjName%.pk3
+del %ProjName%.ipk3
+ren %ProjName%n.ipk3 %ProjName%.ipk3
 echo Done replacing.
 
 echo Step 5: Clean up
