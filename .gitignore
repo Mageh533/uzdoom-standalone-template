@@ -1,0 +1,9 @@
+# UZDoom compiled binaries and packaged files
+bin/*
+build/*
+7z/*
+
+# Backup files
+*.bak*
+*.autosave*
+*.dbs
