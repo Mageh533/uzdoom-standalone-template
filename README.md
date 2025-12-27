@@ -18,12 +18,6 @@ Other than a [UZDoom](https://github.com/UZDoom/UZDoom), there is really no othe
 - [Ultimate Doom Builder](https://ultimatedoombuilder.github.io/) (Good for level editing and better compared to Slade but its only compatible with Windows)
 - [7zip](https://www.7-zip.org/) (Used in the compile script to create a proper ipk3 to use standalone)
 
-### UZDoom Engine dependency
-
-This repo includes UZDoom source as a submodule. I recommend forking UZDoom in a separate repo and then changing the git submodule to match your forked version. This is entirely optional and you can perfectly fine make an entire game without modifying the UZDoom code.
-
-[More info into building their code in their official compilation guide](https://github.com/UZDoom/UZDoom/wiki/Compilation)
-
 ## Setting up
 
 Either compile your own or [download UZDoom](https://zdoom.org/downloads) binaries and place them under a 'bin' folder from the root directory of this project. This will allow you to compile your project later.
