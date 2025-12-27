@@ -24,6 +24,6 @@ Either compile your own or [download UZDoom](https://zdoom.org/downloads) binari
 
 Then you should rename and open up the `standalone_template.ipk3` inside slade and change the IWAD settings to match the name of your game/project. From then on everything else should be worked on from the data folder.
 
-The `start.bat` or `start.sh` should allow you to run the game before compiling. Before using these you should either modify them to include the paths of your UZDoom binaries or setup enviromental variables.
+The `start.bat` or `start.sh` should allow you to run the game before compiling.
 
 The `compile.bat` or `compile.sh` require you have the console version of 7zip binaries under a `7z` folder in the root of this repo. These should generate a folder that contains your game iwad packaged under a single iwad alongside the UZDoom executable dedicated to only running your game. You can then send that folder to other people so they can run your game. If you would like to only generate the iwad then set the `IwadOnly` variable inside the compile script to `y`.
