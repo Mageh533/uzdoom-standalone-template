@@ -34,6 +34,10 @@ if [ "$IwadOnly" != "y" ]; then
     echo "Moving UZDoom binaries..."
     cd ..
     cp -r bin/* build/
+    echo "Removing files not allowed for commercial distribution..."
+    rm build/brightmaps.pk3
+    rm build/game_support.pk3
+    rm build/game_widescreen_gfx.pk3
 fi
 
 echo "Done."

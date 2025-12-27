@@ -33,6 +33,10 @@ if NOT "%IwadOnly%"=="y" (
     echo Moving UZDoom binaries...
     cd ..
     xcopy bin\* build\
+    echo Removing files not allowed for commercial distribution...
+    del build\brightmaps.pk3
+    del build\game_support.pk3
+    del build\game_widescreen_gfx.pk3
 )
 
 echo Done.
