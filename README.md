@@ -20,6 +20,8 @@ Other than a [UZDoom](https://github.com/UZDoom/UZDoom), there is really no othe
 
 ## Setting up
 
+### IWAD config and compiling
+
 Either compile your own or [download UZDoom](https://zdoom.org/downloads) binaries and place them under a 'bin' folder from the root directory of this project. This will allow you to compile your project later.
 
 Then you should rename and open up the `standalone_template.ipk3` inside slade and change the IWAD settings to match the name of your game/project. From then on everything else should be worked on from the data folder.
@@ -27,3 +29,9 @@ Then you should rename and open up the `standalone_template.ipk3` inside slade a
 The `start.bat` or `start.sh` should allow you to run the game before compiling.
 
 The `compile.bat` or `compile.sh` require you have the console version of 7zip binaries under a `7z` folder in the root of this repo. These should generate a folder that contains your game iwad packaged under a single iwad alongside the UZDoom executable dedicated to only running your game. You can then send that folder to other people so they can run your game. If you would like to only generate the iwad then set the `IwadOnly` variable inside the compile script to `y`.
+
+### Doom Builder Config
+
+If using Ultimate Doom Builder, this repo comes with a pre made config you can build on to improve on mapping and avoid errors or incompatible maps by accident. These are under the `buildercfg` folder in this repo, go through them and change any template naming to your own, then move this under the configurations folder in UDB. The config by default includes basic things like Player start, keys and teleporters alongside the ZDoom engine things.
+
+You should then setup the IWADs in doom builder to include `uzdoom.pk3`, `lights.pk3` (optional) and your standalone template ipk3 alongside the data folder as a directory.
